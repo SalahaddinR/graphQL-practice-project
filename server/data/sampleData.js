@@ -1,0 +1,13 @@
+let users = [
+    {id: 1, firstName: "David", lastName: "Anderson", email: "davidanderson@email.com"},
+    {id: 2, firstName: "Jack", lastName: "Kelvin", email: "jackkelvin@email.com"},
+    {id: 3, firstName: "Jim", lastName: "Robertson", email: "jimrobertson@email.com"}
+]
+
+let posts = [
+    {id: 1, user_id: 1, title: "Journey to Nevada", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At urna condimentum mattis pellentesque id nibh. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat. Suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Ut aliquam purus sit amet luctus. Turpis egestas integer eget aliquet nibh. Nulla pellentesque dignissim enim sit amet venenatis urna. Morbi non arcu risus quis varius quam quisque id. Id ornare arcu odio ut. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada."},
+    {id: 2, user_id: 2, title: "SpaceX Achievements", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At urna condimentum mattis pellentesque id nibh. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat. Suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Ut aliquam purus sit amet luctus. Turpis egestas integer eget aliquet nibh. Nulla pellentesque dignissim enim sit amet venenatis urna. Morbi non arcu risus quis varius quam quisque id. Id ornare arcu odio ut. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada."},
+    {id: 3, user_id: 3,  title: "Metaprogramming in Python", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Enim diam vulputate ut pharetra sit amet aliquam id. Enim tortor at auctor urna nunc id. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Sed tempus urna et pharetra pharetra. Blandit turpis cursus in hac."}
+]
+
+module.exports = {users, posts}

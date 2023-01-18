@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', 'sans-serif';
+}
+
+a { 
+    color: black;
+    text-decoration: none;
+}
+
+button, input, textarea {
+    outline: none; border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.application {
+    width: 100%;  position: relative;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed; top: 0; width: 100%;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .logo-icon {
+            width: 70px; height: 70px;
+        }
+
+        .logo-text {
+            font-size: 42px;
+            font-family: 'Poppins';
+            font-weight: 700;
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        .menu-item {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+
+            &:hover {
+                color: purple;
+            }
+        }
+    }
+}
+
+.features {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.content {
+    padding: 10px 40px;
+}
+
+.users {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 10px;
+    border-radius: 10px;
+    min-height: 400px;
+
+    .row-headers {
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 400px 400px auto;
+        padding: 10px 20px;
+        color: purple;
+        font-size: 24px;
+        text-transform: uppercase;
+        
+    }
+
+    .user-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 400px 400px auto;
+        justify-items: flex-start;
+        align-items: center;
+        padding: 10px 20px;
+        border-bottom: 1px solid gray;
+        
+
+        .row-name {
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .row-email {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .row-delete {
+            justify-self: flex-end;
+            width: 40px; height: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            background-color: rgb(223, 35, 35);
+            border-radius: 7px;
+
+            &:active {
+                box-shadow: 0 0 0 3px rgba(223, 35, 35, 0.4);
+            }
+        }
+
+        &:hover {
+            background-color: antiquewhite;
+        }
+    }
+}
+
+.posts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px; padding: 20px;
+
+    .post-block {
+        max-width: 600px;
+        min-width: 600px;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        align-content: flex-start;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+
+        .post-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+
+            .post-block-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    max-width: 400px;
+                }
+            }
+        }
+        .post-features {
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            flex-grow: 1;
+            .button {
+                font-size: 28px;
+                width: 50px; height: 50px;
+                color: #fff;
+                border-radius: 10px;
+            }
+            .delete-button {
+                background-color: rgb(240, 32, 32);
+            }
+            .edit-button {
+                background-color: orange;
+            }
+        }
+    }
+}
